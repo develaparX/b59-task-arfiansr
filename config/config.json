@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "arunikax",
+    "password": "bangkitcok",
+    "database": "dumbays_personlweb",
+    "host": "127.0.0.1",
+    "port": "5432",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "arunikax",
+    "password": "bangkitcok",
+    "database": "dumbays_personlweb",
+    "host": "127.0.0.1",
+    "port": "5432",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "root",
+    "password": "bangkitcok",
+    "database": "dumbays_personlweb",
+    "host": "127.0.0.1",
+    "port": "5432",
+    "dialect": "postgres"
+  }
+}

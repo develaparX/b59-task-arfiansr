@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  font-family: "Poppins", sans-serif;
+  background-color: azure;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: rgb(127, 255, 249);
+}
+
+textarea {
+  height: 100px;
+}
+
+input,
+select,
+textarea {
+  box-shadow: 3px 3px 0 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+hr {
+  width: 30%;
+  margin: 40px auto;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+/* create Project */
+
+.create-project-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.project-form {
+  width: 700px;
+  background-color: rgb(198, 255, 255);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 102, 128, 0.5);
+}
+
+.project-form > h1 {
+  margin-bottom: 2rem;
+}
+
+.form-input {
+  border: 1px solid rgb(206, 201, 201);
+  border-radius: 5px;
+  padding: 7px;
+}
+
+.form-field {
+  font-weight: large;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-field label {
+  margin-bottom: 8px;
+}
+
+.project-date {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.project-date input {
+  width: 300px;
+}
+
+.tech-field {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.tech-field label {
+  margin-left: 10px;
+}
+
+.input-project-image-group {
+  background-color: white;
+  height: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  box-shadow: 3px 3px 0 0;
+}
+.image-label {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.input-project-image-group label p {
+  font-weight: 400;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+
+  background-color: rgb(180, 180, 180);
+}
+
+.input-project-image-group label i {
+  padding-right: 0.8rem;
+}
+
+.form-submit-button {
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  width: 130px;
+  height: 40px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.form-submit-button:hover,
+.btn-edit:hover,
+.btn-delete:hover,
+.create-project-btn:hover {
+  background-color: rgb(71, 68, 68);
+  outline-color: white;
+}
+
+.project-submit {
+  display: flex;
+  justify-content: end;
+}
+
+/* Project Detail */
+
+.project-header {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.project-header button {
+  position: absolute;
+  right: 20rem;
+}
+
+.create-project-btn {
+  font-weight: 600;
+  color: white;
+  display: flex;
+  max-width: 120px;
+  align-items: center;
+  position: absolute;
+  right: 30rem;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 15%;
+}
+
+.cardp-desc-link:hover {
+  display: block;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.cardp-dir {
+  box-shadow: 4px 4px 0 2px;
+  text-align: center;
+  width: 350px;
+  max-height: fit-content;
+  border-radius: 5px;
+  margin-bottom: 100px;
+  border: 2px solid grey;
+}
+
+.cardp-dir:hover {
+  box-shadow: 10px 10px 2px rgba(0, 102, 128, 0.5);
+  background-color: rgb(198, 255, 255);
+}
+
+.cardp {
+  display: flex;
+  justify-content: center;
+  margin-left: 2rem;
+}
+
+.cardp-img {
+  max-width: 95%;
+  height: 200px;
+  background-color: brown;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+
+.cardp-i {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.cardp-desc {
+  padding: 0 0.4rem;
+  text-align: justify;
+}
+
+.desc-title {
+  margin-bottom: 20px;
+}
+
+.desc-title h2 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.desc-title-satu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.relative-time {
+  color: #a2a2a2;
+  text-align: right;
+  font-size: 14px;
+}
+
+.desc-title p {
+  font-size: 12px;
+  text-align: left;
+}
+
+.desc-detail {
+  margin-bottom: 20px;
+  font-size: 14px;
+  display: -webkit-box; /* Gunakan box model Webkit */
+  -webkit-line-clamp: 3; /* Batasi hingga 3 baris */
+  -webkit-box-orient: vertical; /* Orientasi vertikal */
+  overflow: hidden; /* Sembunyikan teks yang terpotong */
+  text-overflow: ellipsis; /* Tambahkan ellipsis (...) */
+}
+
+.desc-stack {
+  display: flex;
+  gap: 15px;
+  margin: 40px 0;
+}
+
+.desc-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  gap: 20;
+}
+
+.btn-delete,
+.btn-edit {
+  max-width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.create-project-btn,
+.btn-delete,
+.btn-edit {
+  background-color: black;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 8px;
+  width: 49%;
+  height: 30px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1108px) {
+  .nav-left ul {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .nav-right {
+    padding-right: 5rem;
+  }
+  .create-project-btn {
+    font-size: 13px;
+    max-width: 100px;
+    right: 10rem;
+  }
+}

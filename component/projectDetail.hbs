@@ -1,0 +1,65 @@
+{{#> layout title=project.name style="/assets/styles/projectDetailStyle.css"}}
+<main>
+  <div class="project-post">
+    <h1>{{project.name}}</h1>
+    <div class="post-head">
+      <div class="post-head-right">
+        <img src="{{project.image}}" alt="{{project.name}}" />
+      </div>
+      <div class="post-head-left">
+        <div class="head-duration">
+          <h3>Duration</h3>
+          <div class="duration-count">
+            <i class="fa-solid fa-calendar-days"></i>
+            <p>Start Date : {{project.startDate}}</p>
+          </div>
+          <div class="duration-count">
+
+            <i class="fa-solid fa-calendar-days"></i>
+            <p>End Date : {{project.endDate}}</p>
+          </div>
+          <div class="duration-month">
+            <i class="fa-solid fa-calendar"></i>
+            <p>{{project.duration}} months</p>
+          </div>
+        </div>
+        <div class="head-tech">
+          <h3>Technologies</h3>
+          <div class="tech-stack">
+          
+            {{#each project.stack}}
+          {{#if (eq this "NodeJS")}}
+          <div class="logo-stack">
+              <i class="fa-brands fa-node-js fa-2xl"></i>
+            <p>{{this}}</p>
+          </div>
+          {{/if}}
+          {{#if (eq this "Golang")}}
+           <div class="logo-stack">
+             <i class="fa-brands fa-golang fa-2xl"></i>
+            <p>{{this}}</p>
+           </div>
+          {{/if}}
+          {{#if (eq this "ReactJS")}}
+            <div class="logo-stack">
+              <i class="fab fa-react fa-2xl"></i>
+            <p>{{this}}</p>
+            </div>
+          {{/if}}
+          {{#if (eq this "HTML5")}}
+            <div class="logo-stack">
+              <i class="fa-brands fa-html5 fa-2xl"></i>
+            <p>{{this}}</p>
+            </div>
+          {{/if}}
+        {{/each}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="post-detail">
+      <p>{{project.desc}}</p>
+    </div>
+  </div>
+</main>
+{{/layout}}

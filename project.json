@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Dumbways Bootcamp Web App",
+    "desc": "Sebuah aplikasi web yang dikembangkan selama mengikuti bootcamp Dumbways",
+    "startDate": "2024-01-15",
+    "endDate": "2024-02-15",
+    "stack": ["NodeJS", "ReactJS", "HTML5"],
+    "image": "https://img.freepik.com/free-photo/view-people-learning-how-make-traditional-sushi-dish_23-2151186458.jpg?ga=GA1.1.925454002.1733145920",
+    "postedAt": "2024-02-15T10:00:00Z"
+  },
+  {
+    "name": "Personal Portfolio",
+    "desc": "Situs web portofolio pribadi untuk menampilkan berbagai proyek",
+    "startDate": "2024-02-20",
+    "endDate": "2024-03-10",
+    "stack": ["ReactJS", "HTML5", "Golang"],
+    "image": "https://img.freepik.com/free-photo/full-shot-students-preparing-exam_23-2149647062.jpg?t=st=1733416505~exp=1733420105~hmac=e3359e5e9dd5007d19652b34346bce1045fe350db572412e1e2f34edbce0a491&w=1380",
+    "postedAt": "2024-03-10T14:30:00Z"
+  }
+]

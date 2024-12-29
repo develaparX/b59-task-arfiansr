@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/styles/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <ul>
+          <li>
+            <img
+              src="https://dumbways.id/assets/images/brandwhite.png"
+              alt="dumbways logo"
+            />
+          </li>
+          <li><a class="{{#if (eq currentPage 'Home')}} active{{/if}}" href="/">Home</a></li>
+          <li><a class="{{#if (eq currentPage 'My Project')}} active{{/if}}" href="/project">My Project</a></li>
+          <li><a  class="{{#if (eq currentPage 'Testimonials')}} active{{/if}}"href="/testimonials">Testimonials</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <a class="{{#if (eq currentPage 'Contact Me')}} active{{/if}}" href="/contact">Contact Me</a>
+      </div>
+    </nav>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+{{#>layout style='/assets/styles/projectStyle.css'}}
+<section class="create-project-section">
+  <form
+    id="projectForm"
+    action="/project/update/{{project.id}}"
+    method="post"
+    class="project-form"
+  >
+    <h1>EDIT MY PROJECT</h1>
+    <div class="form-field">
+      <label for="projectName">Project Name</label>
+      <input
+        class="form-input"
+        name="projectName"
+        id="projectName"
+        placeholder="Your Project Name"
+        type="text"
+        value="{{project.name}}"
+        required
+      />
+    </div>
+    <div class="project-date">
+      <div class="form-field">
+        <label for="startDate">Start Date</label>
+        <input
+          class="form-input"
+          name="startDate"
+          id="startDate"
+          type="date"
+          value="{{project.startDate}}"
+          required
+        />
+      </div>
+      <div class="form-field">
+        <label for="endDate">End Date</label>
+        <input
+          class="form-input"
+          name="endDate"
+          id="endDate"
+          type="date"
+          value="{{project.endDate}}"
+          required
+        />
+      </div>
+    </div>
+
+    <div class="form-field">
+      <label for="projectDesc">Description</label>
+      <textarea
+        class="form-input"
+        name="projectDesc"
+        id="projectDesc"
+        required
+      >{{project.desc}}</textarea>
+    </div>
+
+    <div class="form-field">
+      <label for="tech-field">Technologies</label>
+      <div class="tech-field" id="techStack">
+        <div class="tech-one">
+          <input
+            type="checkbox"
+            name="techStack"
+            id="nodeJs"
+            value="NodeJS"
+            {{#if (includes project.stack "NodeJS")}}checked{{/if}}
+          />
+          <label for="nodeJs">
+            <i class="fa-brands fa-node-js fa-lg"></i>
+            NodeJS
+          </label>
+        </div>
+        <div class="tech-two">
+          <input
+            type="checkbox"
+            name="techStack"
+            id="reactJs"
+            value="ReactJS"
+            {{#if (includes project.stack "ReactJS")}}checked{{/if}}
+          />
+          <label for="reactJs">
+            <i class="fab fa-react fa-lg"></i>
+            ReactJS
+          </label>
+        </div>
+        <div class="tech-three">
+          <input
+            type="checkbox"
+            name="techStack"
+            id="golang"
+            value="Golang"
+            {{#if (includes project.stack "Golang")}}checked{{/if}}
+          />
+          <label for="golang">
+            <i class="fab fa-golang fa-lg"></i>
+            Golang
+          </label>
+        </div>
+        <div class="tech-four">
+          <input
+            type="checkbox"
+            name="techStack"
+            id="html5"
+            value="HTML5"
+            {{#if (includes project.stack "HTML5")}}checked{{/if}}
+          />
+          <label for="html5">
+            <i class="fa-brands fa-html5 fa-lg"></i>
+            HTML5
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-field">
+      <label for="input-project-image" class="project-label">Upload Image</label>
+      <div class="input-project-image-group">
+        <label class="image-label" for="input-project-image">
+          <p>Attach File</p>
+          <i class="fa-solid fa-folder-open"></i>
+        </label>
+        <input
+          class="project-input"
+          name="input-project-image"
+          id="input-project-image"
+          type="file"
+          hidden
+        />
+      </div>
+    </div>
+
+    <div class="project-submit">
+      <button class="form-submit-button" type="submit">Update</button>
+    </div>
+  </form>
+</section>
+
+{{/layout}}

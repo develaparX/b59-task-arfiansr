@@ -1,0 +1,62 @@
+{{#>layout title="Contact Me" style="/assets/styles/contactStyle.css"}}
+    <main class="contact-section">
+      <form id="contactForm" action="" class="contact-form">
+        <h1>GET IN TOUCH</h1>
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input
+            class="form-input"
+            name="name"
+            id="name"
+            placeholder="name"
+            type="text"
+            required
+          />
+        </div>
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input
+            class="form-input"
+            name="email"
+            id="email"
+            placeholder="email"
+            type="email"
+            required
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="subject">Subject</label>
+          <input
+            class="form-input"
+            name="subject"
+            id="subject"
+            placeholder="subject"
+            type="text"
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="skill">Skill</label>
+          <select class="form-input" id="skill" name="skill" required>
+            <option value=""></option>
+            <option value="frontend">Front End</option>
+            <option value="backend">Back End</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="message">Your Message</label>
+          <textarea class="form-input" name="message" id="message"></textarea>
+        </div>
+
+        <div class="blog-submit">
+          <button class="form-submit-button" type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+
+    
+   <script src="/assets/javascript/submitForm.js"></script>
+
+{{/layout}}
