@@ -1,5 +1,11 @@
 {{#> layout title="My Project" style='/assets/styles/projectStyle.css'}}
 
+<head>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
+<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+
+</head>
+
 <div class="project-header">
         <h1>My Project</h1>
       <a class="create-project-btn" href="/create-project"> Create Project</a>
@@ -53,7 +59,7 @@
             <div class="desc-btn">
               <a class="btn-edit" href="/project/edit/{{this.id}}">Edit</a>
 
-             <a class="btn-delete" href="/project/delete/{{this.id}}" onclick="return confirm('Are you sure you want to delete this project?');">Delete</a>
+            <a class="btn-delete" href="javascript:void(0);" onclick="deleteProject('{{this.id}}')">Delete</a>
 
             </div>
           </div>
@@ -67,5 +73,5 @@
 
     </section>
 
-    {{!-- <script src="/assets/javascript/script.js"></script> --}}
+    <script src="/assets/javascript/alert.js"></script>
 {{/layout}}
